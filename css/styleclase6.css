@@ -12,3 +12,27 @@ p {
   color: red;
   text-align: center;
 }
+
+header {
+  border-bottom: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  margin: 10px;
+}
+
+header nav ul li a:hover {
+  color: yellow;
+  margin: 5px;
+}
