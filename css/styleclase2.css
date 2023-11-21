@@ -1,0 +1,47 @@
+h1 {
+  color: rgb(54, 56, 32);
+  /*Font Family*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Forma de agregar colores:
+RGB
+RGBA(con opacidad)
+HEXADECIMAL(numero del color)
+NOMBRE DEL COLOR
+*/
+
+/*Color del Body*/
+body {
+  background-color: rgb(206, 183, 183);
+}
+
+a {
+  background-color: #d1e500;
+  /*link de google fonts*/
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+li {
+  color: green;
+}
+
+/*Las clases se unen con el CSS .nombreClase*/
+
+.parrafo-lorem {
+  color: darkslategrey;
+}
+
+.uno-libertadores {
+  background-color: deeppink;
+}
+
+/*Llamar id en el CSS*/
+
+#dos-libertadores {
+  color: aqua;
+  background-color: black;
+}
+
+p span {
+  color: aliceblue;
+}

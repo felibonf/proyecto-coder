@@ -1,0 +1,177 @@
+/*Sintaxis CSS
+
+elemento {
+    propiedad: valor;
+}
+
+*/
+/*aplicar una fuente descargada desde internet*/
+/*font family,@font-face*/
+@font-face {
+  /*un nombre para relacionar esta tipografia (una referencia)*/
+  font-family: "roboto-general";
+  /*tiene que estar en una carpeta dentro del proyecto*/
+  src: url();
+}
+
+/*Fuente descargaada de internet ya aplicada en el html*/
+p {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+p {
+  color: black;
+  font-size: 20px;
+}
+
+h1 {
+  background-color: blue;
+}
+
+/*Identificar elementos para diferenciarlos*/
+section p {
+  color: yellow;
+}
+
+/*Aplicar estilos por clases*/
+.paragraph-one {
+  color: gray;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+}
+
+/*Aplicar estilo para solo una etiqueta, que por ejemplo va a ser unica*/
+footer {
+  background-color: aliceblue;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+/*Unidades de medida absoluta: las cuales no modifican su tamanio*/
+p {
+  font-size: 20px;
+  margin: 40px;
+}
+
+/*Unidades de medida relativa: se van adaptando relativamente*/
+img {
+  width: 100%;
+}
+
+/*Unidad de medida rem*/
+/*Rem es relativo al tamanio del elemento root*/
+a {
+  font-size: 2rem; /*16px default de HTML*/
+}
+
+/*Unida de medida em*/
+p {
+  font-size: 2em; /*default que vos elijas*/
+}
+
+/*******CLASE 3 *********/
+
+.p-clase3 {
+  background-color: blue;
+}
+
+.a-clase3 {
+  /*Propiedades para modificar el contenido*/
+  color: white;
+  /*Sacarle el subrayado*/
+  text-decoration: none;
+  /*Grosor de la letra*/
+  font-weight: bolder;
+
+  /*Padding: agregarle un relleno interno*/
+  /*padding-right: 50px;
+  padding-top: 15px;*/
+  padding: 20px 25px;
+
+  /*Border: darle un borde al box*/
+  /*tamanio-estilo-color*/
+  border-bottom: 20px solid yellow;
+  border-right: 20px dotted blue;
+  /*bordes redondeados*/
+  border-radius: 8px;
+
+  /*Display:en bloque ocupa el 100% del ancho disponible, en linea 
+  solo el ancho de su contenido*/
+  display: inline;
+}
+
+/*imagenes */
+.img-clase3 {
+  width: 250px;
+  height: 250px;
+  border: 3px solid black;
+}
+
+.caja-relative {
+  background-color: red;
+  /*Position: relative-ajusta la posicion en relacion con su posicion normal*/
+  position: relative;
+  left: 55px;
+}
+
+.caja-absolute {
+  background-color: blue;
+  /*Position: absolute-si no tiene ningun elemento principal, entonces el sigueinte elemento <html> sera su padre*/
+  position: absolute;
+  right: 5px;
+}
+
+.caja-fixed {
+  background-color: green;
+  /*Position: fixed-fija un elemento en una posicion concreta en relacion con la ventana del
+  navegador, en lugar de en relacion con su contenedor o el flujo del documento*/
+  position: fixed;
+  right: 5px;
+  bottom: 15px;
+}
+
+.caja-sticky {
+  background-color: pink;
+  /*Fija la posicion de un elemento*/
+  position: sticky;
+  top: 35px;
+}
+
+.container {
+  background-color: black;
+  /*FlexBox*/
+  display: flex;
+  /*Align Items*/
+  align-items: center;
+  /*Justify Content*/
+  justify-content: space-around;
+
+  border-bottom: 1px solid gray;
+  padding: 15px;
+}
+
+.container img {
+  width: 120px;
+}
+
+.container nav ul {
+  list-style-type: none;
+  /*flex*/
+  /*display flex elementos uno al lado del otro*/
+  display: flex;
+}
+
+.container nav ul li {
+  margin: 0 8px;
+}
+
+.container nav ul li a {
+  text-decoration: none;
+  color: white;
+}

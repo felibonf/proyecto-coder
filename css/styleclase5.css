@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkslategray;
+}
+
+.boton-hover {
+  background-color: yellow;
+  display: block;
+  margin-top: 10px;
+  margin-left: 45px;
+  width: 150px;
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  color: black;
+}
+
+.boton-hover:hover {
+  /*colocamos nuevas propoiedades*/
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  transition: 1s;
+}
+
+header {
+  padding: 15px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  /*Transition*/
+  transition: 1s;
+}
+
+header a:hover {
+  color: yellow;
+}
+
+.ferrari {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  /*br image*/
+  background-image: url(../assets/ferrari-sp48-unica.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
+  transition: 1s;
+}
+
+.ferrari:active {
+  /*Se modifica haciendo click*/
+  background-image: url(../assets/ferrari-vision-gran-turismo-1.jpg);
+  border: 2px solid white;
+  transition: 1s;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+form label {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 150px;
+  background-color: black;
+  border: 1px solid grey;
+  padding: 5px;
+  color: lightslategray;
+}
+
+form input:focus {
+  border: 2px dotted grey;
+}
+
+section ol {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+li:first-child {
+  /*first child para el primer elemento*/
+  color: aqua;
+}
+
+li:last-child {
+  /*last child: ultimo elemento*/
+  color: lightgreen;
+}
+
+li:nth-child(4) {
+  /*nth-child: para seleccionar el elemento que quiero*/
+  color: lightsalmon;
+}
